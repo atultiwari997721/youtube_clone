@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yt-bg: #0f0f0f;
+  --color-yt-hover: #212121;
+  --color-yt-active: #272727;
+  --color-yt-search-bg: #121212;
+  --color-yt-search-border: #303030;
+  --color-yt-border: #3f3f3f;
+  --color-yt-text-primary: #ffffff;
+  --color-yt-text-secondary: #aaaaaa;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Custom styles for active class border transition */
+.active-tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
